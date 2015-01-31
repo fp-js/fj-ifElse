@@ -25,3 +25,26 @@ ifTrue(
     () => t.fail()
 );
 ```
+
+
+## API
+
+### ifElse
+
+Checks if a predicate returns true and calls the associated function.
+
+`ifElse(predicate, then, otherwise)`
+
+***Parameters***
+
+| Name          | Type        | Description                           |
+| ------------- | ----------- | --------------------------            |
+| predicate     | function    | Function that returns true or false   |
+| then          | function    | Function called if predicate is true  |
+| otherwise     | function    | Function called if predicate is false |
+
+***Returns***
+
+| Type        | Description                                     |
+| ----------- | --------------------------                      |
+| *           | Returns the return value of the called function |
