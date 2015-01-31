@@ -17,4 +17,11 @@ ifElse(
   () => console.log('if'),
   () => console.log('else')
 ); 
+
+var ifTrue = ifElse(() => true);
+
+ifTrue(
+    () => t.ok(true),
+    () => t.fail()
+);
 ```
