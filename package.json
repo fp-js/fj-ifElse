@@ -1,7 +1,7 @@
 {
   "name": "fj-ifelse",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Functional ifElse",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
@@ -13,7 +13,8 @@
   "keywords": [
     "fp-dom",
     "fp",
-    "dom"
+    "if",
+    "else"
   ],
   "contributors": [
     "hemanth.hm <hemanth.hm@gmail.com> (http://www.h3manth.com)",

@@ -1,7 +1,7 @@
 # fj-ifElse
 
 [![Build Status](https://travis-ci.org/fp-js/fj-ifElse.svg)](https://travis-ci.org/fp-js/fj-ifElse) [![npm version](https://badge.fury.io/js/fj-ifelse.svg)](http://badge.fury.io/js/fj-ifelse)
-> This is a template repo for fp-dom.
+> Functional ifElse
 
 ## Installation
 
