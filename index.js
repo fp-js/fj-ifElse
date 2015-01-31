@@ -12,5 +12,6 @@ function _ifElse(pred, then, otherwise) {
   }
 }
 
-var ifElse = exports.ifElse = curry3(_ifElse);
-exports.__esModule = true;
+var ifElse = curry3(_ifElse);
+
+module.exports = ifElse;

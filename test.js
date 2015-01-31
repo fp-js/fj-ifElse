@@ -4,8 +4,7 @@ var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["defau
 
 var test = _interopRequire(require("prova"));
 
-var ifElse = require("./").ifElse;
-
+var ifElse = _interopRequire(require("./"));
 
 test("fj-ifElse", function (t) {
     t.plan(3);

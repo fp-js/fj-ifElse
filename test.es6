@@ -1,5 +1,5 @@
 import test from 'prova';
-import { ifElse } from './';
+import ifElse from './';
 
 test('fj-ifElse', (t) => {
   t.plan(3);

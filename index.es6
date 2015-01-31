@@ -9,4 +9,6 @@ function _ifElse(pred, then, otherwise) {
   }
 }
 
-export var ifElse = curry3(_ifElse);
+var ifElse = curry3(_ifElse);
+
+export default ifElse;
