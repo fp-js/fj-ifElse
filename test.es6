@@ -5,21 +5,21 @@ test('fj-ifElse', (t) => {
   t.plan(3);
  
   ifElse(
-      () => true,
-      () => t.ok(true),
+      (x, y) => x === y,
+      (x, y) => t.equals(x, y),
       () => t.fail()
-  );
+  )(true, true);
 
   ifElse(
-      () => false,
+      (x) => x === true,
       () => t.fail(),
-      () => t.ok(true)
-  );
+      (x) => t.ok(x === false)
+  )(false);
 
   var ifTrue = ifElse(() => true);
 
   ifTrue(
       () => t.ok(true),
       () => t.fail()
-  );
+  )();
 });

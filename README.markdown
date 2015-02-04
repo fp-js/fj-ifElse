@@ -13,17 +13,17 @@
 var ifElse = require('fj-ifelse');
 
 ifElse(
-  () => x === true,
-  () => console.log('if'),
-  () => console.log('else')
-); 
+    (x) => x === true,
+    (x) => t.ok(x),
+    () => t.fail()
+)(true);
 
 var ifTrue = ifElse(() => true);
 
 ifTrue(
     () => t.ok(true),
     () => t.fail()
-);
+)();
 ```
 
 
@@ -47,4 +47,4 @@ Checks if a predicate returns true and calls the associated function.
 
 | Type        | Description                                     |
 | ----------- | --------------------------                      |
-| *           | Returns the return value of the called function |
+| function    | Returns a function wich passes the values to the predicate |

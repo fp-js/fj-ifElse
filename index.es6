@@ -2,11 +2,13 @@ import { curry3 } from 'fj-curry';
 
 
 function _ifElse(pred, then, otherwise) {
-  if (pred() === true) {
-    return then();
-  } else {
-    return otherwise();
-  }
+  return (...args) => {
+    if (pred.apply(null, args) === true) {
+      return then.apply(null, args);
+    } else {
+      return otherwise.apply(null, args);
+    }
+  };
 }
 
 var ifElse = curry3(_ifElse);

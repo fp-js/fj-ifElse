@@ -9,21 +9,21 @@ var ifElse = _interopRequire(require("./"));
 test("fj-ifElse", function (t) {
     t.plan(3);
 
-    ifElse(function () {
-        return true;
-    }, function () {
-        return t.ok(true);
+    ifElse(function (x, y) {
+        return x === y;
+    }, function (x, y) {
+        return t.equals(x, y);
     }, function () {
         return t.fail();
-    });
+    })(true, true);
 
-    ifElse(function () {
-        return false;
+    ifElse(function (x) {
+        return x === true;
     }, function () {
         return t.fail();
-    }, function () {
-        return t.ok(true);
-    });
+    }, function (x) {
+        return t.ok(x === false);
+    })(false);
 
     var ifTrue = ifElse(function () {
         return true;
@@ -33,5 +33,5 @@ test("fj-ifElse", function (t) {
         return t.ok(true);
     }, function () {
         return t.fail();
-    });
+    })();
 });
