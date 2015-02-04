@@ -1,6 +1,6 @@
 {
   "name": "fj-ifelse",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Functional ifElse",
   "main": "index.js",
   "scripts": {
